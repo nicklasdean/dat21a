@@ -16,11 +16,17 @@ public class Test {
         users.add(myThirdUser);
         users.add(myFourthUser);
 
-
+        System.out.println(findUser(users, "Mikkel"));
     }
 
-    public static boolean findUser(){
+    public static boolean findUser(ArrayList<User> allUsers,String username){
         //implement search logic
+        for (User currentUser : allUsers) {
+            if(currentUser.getUsername().equalsIgnoreCase(username)){
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void createNewUser(){
