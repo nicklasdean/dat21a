@@ -3,7 +3,7 @@ package stackqueues;
 public class Cat {
     private String name;
     private int age;
-    public static int catsInExistence;
+    public int catsInExistence;
 
     public Cat(String name, int age) {
         this.name = name;
